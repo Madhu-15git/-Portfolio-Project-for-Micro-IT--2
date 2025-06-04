@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #ffd700; /* Gold */
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.score-section p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #bbb;
+}
+
+.score-section span {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-top: 5px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.choice-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    flex-grow: 1; /* Allows buttons to grow and fill space */
+}
+
+.choice-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+.choice-btn:active {
+    transform: translateY(0);
+}
+
+.result-display {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.result-display p {
+    margin: 8px 0;
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+#game-result {
+    font-size: 1.8em;
+    color: #ffd700; /* Gold */
+    margin-top: 15px;
+}
+
+.reset-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #da190b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 25px;
+    }
+    .choice-btn {
+        padding: 10px 15px;
+        font-size: 1.2em;
+    }
+    .choices {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+}

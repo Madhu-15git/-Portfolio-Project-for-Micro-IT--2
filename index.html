@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="score-board">
+            <div class="score-section">
+                <p>You</p>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score-section">
+                <p>Computer</p>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button id="rock" class="choice-btn">🪨 Rock</button>
+            <button id="paper" class="choice-btn">📄 Paper</button>
+            <button id="scissors" class="choice-btn">✂️ Scissors</button>
+        </div>
+
+        <div class="result-display">
+            <p>Your choice: <span id="player-display"></span></p>
+            <p>Computer choice: <span id="computer-display"></span></p>
+            <h2 id="game-result">Choose your weapon!</h2>
+        </div>
+
+        <button id="reset-btn" class="reset-btn">Reset Score</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
